@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+.App{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    height: 100vh;
+}
+.Board_Container-list{
+    min-width: 200px;
+    width: calc(33.3% - 43px);
+    border-radius: 4px;
+    padding: 16px 16px 8px;
+    height: max-content;
+    background-color: #DDDFE7;
+}
+.Board_Container{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.Board-header{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+}
+.Item_Content{
+    position: relative;
+    padding: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    max-width: 100%;
+}
+.Item_Wrapper{
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
+}
+.Board-header{
+    margin-bottom: -11px;
+}
+.Item_Content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Item-type.low.priority{
+    background: #46F7B7;
+    color: #096343;
+}
+.Item-type.medium.priority{
+    background: #F5EB88;
+    color: #653408;
+}
+.Item-type.high.priority{
+    background: #FFA775;
+    color: #622808;
+}
+.Item-type.highest.priority{
+    background: #F27F77;
+    color: #5F0F0B;
+}
+.Item-type{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    width: max-content;
+}
+.Item_Content .Item-desc{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+}
+.Add-card{
+    cursor: pointer;
+    color: #5e6c84;
+    padding: 4px 8px;
+    margin: 10px 0 0 0;
+    border-radius: 4px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+}
+.Add-card:hover{
+    background-color: #091e4214;
+    color: #172b4d;
+}
+.wrapTextArea{
+    max-width: 100%;
+}
+.Item_Content.textarea{
+    width: -webkit-fill-available;
+    margin-top: 10px;
+    border-width: 0px;
+    resize: none;
+}
+.wrapTextArea button{
+    margin-top: 8px;
+    background: #0079bf;
+    border-radius: 8px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+    color: #fff;
+    cursor: pointer;
+}
+.wrapTextArea button.exit{
+    background: #E6D0D0;
+    color: #EB5757;
+
+    margin-left: 3px;
+}
+.textarea_align-priority{
+    display: flex;
+   justify-content: space-between;
+    margin-top: 8px;
+}
+.Item-type.disabled{
+    color: #646570;
+    background: #F7F7F7;
+    cursor: pointer;
+}
+
+.select-selected{
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+}
+.select-selected select{
+    padding: 6px 12px;
+    gap: 5px;
+    text-align: center;
+    background: #FFFFFF;
+
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.align_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rowButtons{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+.rowButtons .delete{
+    cursor: pointer;
+    background: #E6D0D0;
+    color: #EB5757;
+    border-radius: 8px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+}
+.rowButtons .move{
+    cursor: pointer;
+    background: #E7DED6;
+    color: #F2994A;
+    border-radius: 8px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+}
